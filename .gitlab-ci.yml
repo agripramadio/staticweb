@@ -1,0 +1,7 @@
+stages:
+  - deploy
+deploy:
+   stage: deploy
+   script:
+     - pip install django
+     - python manage.py runserver 10.0.1.50:8000
